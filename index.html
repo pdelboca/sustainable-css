@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sustainable.css">
+  <title>Sustainable CSS</title>
+</head>
+
+<body>
+  <header>
+  <nav style="display: flex; justify-content: space-between;">
+    <a href="/">Home</a>
+    <a href="/demo.html">Demo</a>
+  </nav>
+  </header>
+  <hr>
+  <h1>Sustainable.css</h1>
+  <p>A sustainable and good-enough CSS boilerplate that:
+  <ol>
+    <li>Leverages web browsers built-in aesthetics.</li>
+    <li>It embraces semantic HTML.</li>
+    <li>It focuses in basic styling, not layout.</li>
+    <li>Is built with branding in mind so you can color pallette your site.</li>
+    <li>Is built with sustainability in mind.</li>
+  </ol>
+  </p>
+  <p>It is 2023, Web Browers are amazing at rendering and handling natively light-dark schemes. Let's built on that.</p>
+
+  <h2>Yet another minimalistic CSS Framework?</h2>
+  <p>
+    Yes.
+  </p>
+  <p>
+    I built sustainable.css because I usually do lots of simple websites that require two basic things:
+  <ol>
+    <li>Some kind of centering</li>
+    <li>Customizing color pallettes.</li>
+  </ol>
+  I built this framework to help me with that. I hope it helps you too.
+  </p>
+
+  <h2>Is it for me?</h2>
+  <p>Sustainable.css aims to be <strong>good enough</strong> at styling plain HTML. Perfect for MVPs and basic sites
+    built on <a href="https://htmx.org/essays/hateoas/">HATEOAS</a>.</p>
+
+  <p>It does not provide styling that you will probably change anyways (like headers font size and margins) nor layout
+    system (it's 2023, you should be leveraging modern CSS).</p>
+
+  <h2>Sustainability?</h2>
+  <p>With sustainability I refer to several things:
+  <ol>
+    <li>It is just a few KB, Sustainable.css does not require lot of bandwith and energy to work.</li>
+    <li>It will work as long as HTML and CSS work, with extremely low maintenaince.</li>
+    <li>It is not hosted nor packaged with expensive pipelines or infrastructure.</li>
+    <li>Web browsers spends lots of money on styling and rendering features. I build on top of that.</li>
+  </ol>
+  </p>
+
+  <h2>A Good Enough color pallette</h2>
+  <p>
+    Since I'm trying to delegate as much as possible to the browser defaults, I just choose a color that goes good with Black & White (<a href="https://dev.to/finnhvman/which-colors-look-good-on-black-and-white-2pe6">Which Colors Look Good on Black and White?</a>).
+    This way I can leverage the browser's light-dark scheme, the user's preferences and I make sure that colors I choose are accesible.
+  </p>
+  <p>
+    I might extend this as I explore and understand better minimalistic ideas to add color to a website.
+  </p>
+  <h2>Customization</h2>
+  <p>
+    Just add your own css file and override/extend whatever you want.
+  </p>
+  <p>
+    So far only 2 variables are exposed:
+  <ul>
+    <li><code>--max-width</code> to control the width of the body </li>
+    <li><code>--theme-color</code> to control the color of your theme.</li>
+  </ul>
+  </p>
+</body>
+</html>

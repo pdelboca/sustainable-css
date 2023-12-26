@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable.css Demo</title>
+  <link rel="stylesheet" href="css/sustainable.css">
+</head>
+
+<body>
+  <header>
+  <nav style="display: flex; justify-content: space-between; font-size: larger; margin: 20px 0px;">
+    <a href="/">Home</a>
+    <a href="/demo.html">Demo</a>
+  </nav>
+  </header>
+  <hr>
+  <h1>Header 1</h1>
+  <h2>Header 2</h2>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+  <h5>Header 5</h5>
+  <h6>Header 6</h6>
+
+  <h2>Top Navigation links</h2>
+  <p>I only make the <code>font-size: larger</code> and <code>text-decoration: none</code>. You can then layout it as you want.</p>
+
+  <h2>Paragraph</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima libero sint, veritatis quo ratione. Magni
+    assumenda fuga fugiat iure dolor eaque ratione culpa mollitia expedita voluptates. Alias, odio vel?</p>
+
+  <h2>Details</h2>
+  <details>
+    <summary>Click to expand</summary>
+    <p>Good enough.</p>
+  </details>
+
+  <h2>Forms</h2>
+
+  <p>
+    Forms layout are always customized and the styling is highly coupled with the layout. Example: margins of labels are
+    highly coupled with the decision on puting them above the input or besides it. That's why Sustainable.css do not add a lot of CSS to
+    inputs and labels.
+  </p>
+  <p>
+    We focus on giving a small styling to the inputs elements and let the user define how to layout it and further customize it.
+    We do recommend using the sadly forgotten fieldset element.
+  </p>
+
+  <p>
+    The following form is just 10 lines of CSS. <strong>Good enough</strong>.
+  </p>
+
+  <form>
+    <fieldset style="display: grid">
+      <legend>Monster Sight Form</legend>
+      <label for="name">Your name:</label>
+      <input type="text" id="name" name="name" placeholder="Tentáculos Feroces" required>
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" placeholder="tentaculos@feroces.com">
+      <label for="password">Your password:</label>
+      <input type="password" id="password" name="password">
+      <label for="message">Describe the monster you saw:</label>
+      <textarea id="message" rows="5" placeholder="Tentáculos Feroces erra horrible y quería comerme!"></textarea>
+      <label for="date">Last time seen:</label>
+      <input type="date" id="date">
+      <label for="select">Monster form:</label>
+      <select id="select">
+        <option value="1">Pulp</option>
+        <option value="2">Squid</option>
+      </select>
+      <label for="avatar">Upload the sight evidence:</label>
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+      <label for="tentacles">Number of tentacles (10-100):</label>
+      <input type="number" id="tentacles" name="tentacles" min="10" max="100" />
+
+      <fieldset>
+        <legend>
+          Have you seen it's color?
+        </legend>
+        <div>
+          <input type="checkbox" id="purple" name="drone" value="purple" checked />
+          <label for="purple">Purple</label>
+        </div>
+        <div>
+          <input type="checkbox" id="brown" name="drone" value="brown" />
+          <label for="brown">Brown</label>
+        </div>
+        <div>
+          <input type="checkbox" id="grey" name="drone" value="grey" />
+          <label for="grey">Grey</label>
+        </div>
+      </fieldset>
+      <label for="volume">Size of the tentacles</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" />
+      <input type="submit" value="Submit">
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+
+  <h2>Mark</h2>
+  <p>This is a <mark>highlighted</mark> text.</p>
+
+  <h2>Articles</h2>
+  <p>I add a border and align to the right the footer.</p>
+  <p>Usages notes in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article#usage_notes">MDN Web Docs</a></p>
+  <article>
+    <h3>Main Article Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eum omnis corporis mollitia
+      tenetur! Provident quasi praesentium vel, alias saepe quisquam quae hic debitis expedita totam eum libero?</p>
+    <footer>
+      <p>Written by <a href="#">John Doe</a> - Posted on <time datetime="2020-01-01">January 1, 2020</time></p>
+    </footer>
+  </article>
+
+  <h2>Block quote</h2>
+  <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>Words can be like X-rays, if you use them properly—they'll go through anything. You read and you're pierced.</p>
+    <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+  </blockquote>
+
+  <h2>Lists</h2>
+  <p>We add just <code>margin: 0.125em</code> for some extra spacing.</p>
+  <ol>
+    <li>first item</li>
+    <li>
+      second item
+      <!-- closing </li> tag is not here! -->
+      <ul>
+        <li>second item first subitem</li>
+        <li>second item second subitem</li>
+        <li>second item third subitem</li>
+      </ul>
+    </li>
+    <!-- Here's the closing </li> tag -->
+    <li>third item</li>
+  </ol>
+
+
+</body>
+
+</html>

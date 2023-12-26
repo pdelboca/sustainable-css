@@ -1,5 +1,5 @@
 /*!
- * Sustainable CSS v0.0.1 (https://github.com/pdelboca/sustainable-css/)
+ * Sustainable CSS v0.0.2 (https://github.com/pdelboca/sustainable-css/)
  * Copyright 2023 - Licensed under MIT
  */
 
@@ -28,7 +28,7 @@ img {
 }
 
 fieldset, input, select, textarea, button {
-    margin-bottom: 1em;
+    margin: 0.25em;
     max-width: 100%;
     font-size: 1em;
     border-radius: .25em;

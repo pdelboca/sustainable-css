@@ -1,5 +1,5 @@
 /*!
- * Sustainable CSS v0.0.3 (https://github.com/pdelboca/sustainable-css/)
+ * Sustainable CSS v0.0.4 (https://github.com/pdelboca/sustainable-css/)
  * Copyright 2023 - Licensed under MIT
  */
 
@@ -36,10 +36,6 @@ fieldset, input, select, textarea, button {
 
 fieldset, input:not([type=submit]), select, textarea {
     border: 1px solid var(--theme-color);
-}
-
-button + button, input[type=submit] + input[type=submit] {
-    margin-left: 1em;
 }
 
 button, input[type=submit], input[type=reset] {

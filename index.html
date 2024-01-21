@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/sustainable.css">
   <title>Sustainable CSS</title>
+  <style>
+    strong {
+      color: var(--color-10)
+    }
+  </style>
 </head>
 
 <body>
@@ -16,8 +21,8 @@
   </nav>
   </header>
   <hr>
-  <h1>Sustainable.css</h1>
-  <p>A sustainable and <strong>good enough</strong> CSS boilerplate that:
+  <h1 style="color: var(--color-10); font-size: 2.5em;">Sustainable.css</h1>
+  <p>A sustainable and <mark>good enough</mark> CSS boilerplate that:
   <ol>
     <li>Leverages web browsers built-in aesthetics.</li>
     <li>It embraces semantic HTML.</li>
@@ -28,25 +33,25 @@
     <li>Is built with sustainability in mind.</li>
   </ol>
   </p>
-  <p>It is 2023, Web Browers are amazing at rendering and handling natively light-dark schemes. Let's built on that.</p>
+  <p>It is 2023, Web Browers are amazing at rendering and handling natively light-dark schemes, I'm building on top of that.</p>
 
   <h2>Yet another minimalistic CSS Framework?</h2>
   <p>
     Yes.
   </p>
   <p>
-    I built sustainable.css because I usually do lots of simple websites that require a couple of basic things:
+    I built <strong>Sustainable.css</strong> because I usually do lots of simple websites that require a couple of basic things:
   <ol>
     <li>Some kind of centering</li>
-    <li>Customizing color pallettes.</li>
+    <li>Some basic color pallette.</li>
     <li>Support for dark/light schemes</li>
-    <li>Works great on mobile</li>
+    <li>Support for mobile</li>
   </ol>
-  I built this framework to help me with that. I hope it helps you too.
+  I built this framework to help me with that and I hope it helps you too.
   </p>
 
   <h2>Is it for me?</h2>
-  <p>Sustainable.css aims to be <strong>good enough</strong> at styling plain HTML. Perfect for MVPs and sites
+  <p><strong>Sustainable.css</strong> aims to be <mark>good enough</mark> at styling plain HTML. Perfect for MVPs and sites
     built on <a href="https://htmx.org/essays/hateoas/">HATEOAS</a>.</p>
 
   <p>It does not provide styling that you will probably change anyways (like headers font size and margins) nor layout
@@ -55,17 +60,17 @@
   <h2>Sustainability?</h2>
   <p>With sustainability I refer to several things:
   <ol>
-    <li>It is just a few KB, Sustainable.css does not require lot of bandwith and energy to work.</li>
+    <li>It is just a few KB, <strong>Sustainable.css</strong> does not require lot of bandwith and energy to work.</li>
     <li>It will work as long as HTML and CSS work, with extremely low maintenaince.</li>
-    <li>It is not hosted nor packaged with expensive pipelines or infrastructure.</li>
+    <li>It is not hosted nor packaged with expensive pipelines or infrastructure. (#NoBuild FTW!)</li>
     <li>Web browsers spends lots of money on styling and rendering features. I build on top of that.</li>
   </ol>
   </p>
 
-  <h2>A Good Enough color pallette</h2>
+  <h2>Branding</h2>
   <p>
     Since I'm trying to delegate as much as possible to the browser defaults, I just choose a color that goes good with Black & White (<a href="https://451colors.fly.dev/">Colors with 4.5:1 contrast on Black and White</a>).
-    This way I can leverage the browser's light-dark scheme, the user's preferences and I make sure that colors I choose are accesible.
+    This way I can leverage the browser's light-dark scheme knowing that the pallete color will be accesible in both modes.
   </p>
   <p>
     I might extend this as I explore and understand better minimalistic ideas to add color to a website.
@@ -78,8 +83,23 @@
     So far only 2 variables are exposed:
   <ul>
     <li><code>--max-width</code> to control the width of the body </li>
-    <li><code>--theme-color</code> to control the color of your theme.</li>
+    <li><code>--color-10</code> to control the accent color of your theme.</li>
   </ul>
+
+  <p>
+    <strong>Sustainbale.css</strong> is being developed with the 60/30/10 design rule in mind (being 60% the main black/white used for backgrounds!).
+  </p>
+  <p>
+    <code>--color-10</code> will customize:
+    <ul style="list-style-type: lower-latin;">
+      <li>submit inputs,</li>
+      <li>links underlines</li>
+      <li>form input's accent-colors</li>
+    </ul>
+  </p>
+  <p>
+    It's up to you to use it to add some extra "splash" of it to your UI. (For this page I decided to style strong tags and the main header with it)
+  </p>
   </p>
   <h2>Sustainable.css in action</h2>
   <ul>

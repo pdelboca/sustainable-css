@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sustainable.css Demo</title>
   <link rel="stylesheet" href="css/sustainable.css">
+  <style>
+    strong {
+      color: var(--color-10)
+    }
+  </style>
 </head>
 
 <body>
@@ -33,8 +38,11 @@
   <h2>Details</h2>
   <details>
     <summary>Click to expand</summary>
-    <p>I just added <code>cursor: pointer;</code> to the summary element. Good enough.</p>
+    <p>I just added <code>cursor: pointer;</code> to the summary element, <mark>good enough</mark>.</p>
   </details>
+
+  <h2>Anchors and links</h2>
+  <a href="#">Default font color that becomes strong on hovering and accented underline.</a>
 
   <h2>Forms</h2>
 
@@ -49,7 +57,7 @@
   </p>
 
   <p>
-    The following form is just 10 lines of CSS. <strong>Good enough</strong>.
+    The following form is just 10 lines of CSS, <mark>good enough</mark>.
   </p>
 
   <form>

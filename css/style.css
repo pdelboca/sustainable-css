@@ -1,0 +1,20 @@
+header {
+    display: grid;
+    margin-inline: auto;
+    place-content: center;
+    text-align: center;
+    background-color: canvastext;
+    color: canvas;
+}
+
+strong {
+    color: var(--color-10)
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 3rem
+}

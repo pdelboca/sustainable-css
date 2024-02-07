@@ -6,46 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sustainable.css Demo</title>
   <link rel="stylesheet" href="css/sustainable.css">
-  <style>
-    strong {
-      color: var(--color-10)
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-  <nav style="display: flex; justify-content: space-between;">
+  <h1 style="text-align: center; color: var(--color-10);">Sustainable.css</h1>
+  <p>A long lasting simple CSS framework for semantic HTML.</p>
+  <nav style="display: flex; justify-content: space-between; margin: 0.75rem 0;">
     <a href="/sustainable-css/">Home</a>
     <a href="/sustainable-css/demo.html">Demo</a>
   </nav>
   </header>
-  <hr>
-  <h1>Header 1</h1>
-  <h2>Header 2</h2>
-  <h3>Header 3</h3>
-  <h4>Header 4</h4>
-  <h5>Header 5</h5>
-  <h6>Header 6</h6>
+  <main>
+  <h2>Header and paragraphs</h2>
+  <p>Header and paragraphs do not have margins. Avoiding <a href="https://www.joshwcomeau.com/css/rules-of-margin-collapse/" target="_blank">margin collapse</a> makes styling way easier.</p>
 
   <h2>Top Navigation links</h2>
   <p>I only make the <code>font-size: larger</code> and <code>text-decoration: none</code>. You can then layout it as you want.</p>
 
-  <h2>Paragraph</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima libero sint, veritatis quo ratione. Magni
-    assumenda fuga fugiat iure dolor eaque ratione culpa mollitia expedita voluptates. Alias, odio vel?</p>
-
   <h2>Details</h2>
   <details>
     <summary>Click to expand</summary>
-    <p>I just added <code>cursor: pointer;</code> to the summary element, <mark>good enough</mark>.</p>
+    <p>A little bit or margin is <mark>good enough</mark></p>
   </details>
 
   <h2>Anchors and links</h2>
   <a href="#">Default font color that becomes strong on hovering and accented underline.</a>
 
   <h2>Forms</h2>
-
   <p>
     Forms layout are always customized and the styling is highly coupled with the layout. Example: margins of labels are
     highly coupled with the decision on puting them above the input or besides it. That's why Sustainable.css do not add
@@ -55,11 +44,9 @@
     We focus on giving a small styling to the inputs elements and let the user define how to layout it and further customize it.
     We do recommend using the sadly forgotten fieldset element.
   </p>
-
   <p>
     The following form is just 10 lines of CSS, <mark>good enough</mark>.
   </p>
-
   <form>
     <fieldset style="display: grid">
       <legend>Monster Sight Form</legend>
@@ -130,7 +117,6 @@
   </blockquote>
 
   <h2>Lists</h2>
-  <p>We add just <code>margin: 0.125em</code> for some extra spacing.</p>
   <ol>
     <li>first item</li>
     <li>
@@ -145,8 +131,7 @@
     <!-- Here's the closing </li> tag -->
     <li>third item</li>
   </ol>
-
-
+</main>
 </body>
 
 </html>

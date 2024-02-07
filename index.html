@@ -5,67 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/sustainable.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sustainable CSS</title>
-  <style>
-    strong {
-      color: var(--color-10)
-    }
-  </style>
 </head>
 
 <body>
   <header>
-  <nav style="display: flex; justify-content: space-between;">
+    <h1 style="color: var(--color-10); font-size: 2.5em;">Sustainable.css</h1>
+    <p>A long lasting simple CSS framework for semantic HTML.</p>
+  <nav style="display: flex; justify-content: space-between; margin: 0.75rem 0;">
     <a href="/sustainable-css/">Home</a>
     <a href="/sustainable-css/demo.html">Demo</a>
   </nav>
   </header>
-  <hr>
-  <h1 style="color: var(--color-10); font-size: 2.5em;">Sustainable.css</h1>
-  <p>A sustainable and <mark>good enough</mark> CSS boilerplate that:
+  <main>
+  <p>A sustainable and <mark>good enough</mark> CSS boilerplate that:</p>
   <ol>
-    <li>Leverages web browsers built-in aesthetics.</li>
+    <li>Leverages web browsers built-in aesthetics (including <a href="https://drafts.csswg.org/css-color-4/#css-system-colors">system colors</a>).</li>
     <li>It embraces semantic HTML.</li>
     <li>It focuses in basic styling, not layout.</li>
     <li>Is built with branding in mind so you can color pallette your site.</li>
     <li>It focuses to work properly on mobile.</li>
     <li>Works great with native browsers light/dark schemes</li>
-    <li>Is built with sustainability in mind.</li>
+    <li>Is built to last.</li>
   </ol>
-  </p>
   <p>It is 2023, Web Browers are amazing at rendering and handling natively light-dark schemes, I'm building on top of that.</p>
 
   <h2>Yet another minimalistic CSS Framework?</h2>
-  <p>
-    Yes.
-  </p>
-  <p>
-    I built <strong>Sustainable.css</strong> because I usually do lots of simple websites that require a couple of basic things:
+  <p> Yes. </p>
+  <p> I built <strong>Sustainable.css</strong> because I usually do lots of simple websites that require a couple of basic things: </p>
   <ol>
     <li>Some kind of centering</li>
     <li>Some basic color pallette.</li>
     <li>Support for dark/light schemes</li>
     <li>Support for mobile</li>
   </ol>
-  I built this framework to help me with that and I hope it helps you too.
-  </p>
+  <p>It helps me, I hope it helps you too.</p>
 
   <h2>Is it for me?</h2>
   <p><strong>Sustainable.css</strong> aims to be <mark>good enough</mark> at styling plain HTML. Perfect for MVPs and sites
     built on <a href="https://htmx.org/essays/hateoas/">HATEOAS</a>.</p>
-
   <p>It does not provide styling that you will probably change anyways (like headers font size and margins) nor layout
     system (it's 2023, you should be leveraging modern CSS).</p>
 
   <h2>Sustainability?</h2>
-  <p>With sustainability I refer to several things:
+  <p>With sustainability I refer to several things:</p>
   <ol>
     <li>It is just a few KB, <strong>Sustainable.css</strong> does not require lot of bandwith and energy to work.</li>
     <li>It will work as long as HTML and CSS work, with extremely low maintenaince.</li>
     <li>It is not hosted nor packaged with expensive pipelines or infrastructure. (#NoBuild FTW!)</li>
     <li>Web browsers spends lots of money on styling and rendering features. I build on top of that.</li>
   </ol>
-  </p>
 
   <h2>Branding</h2>
   <p>
@@ -75,39 +65,42 @@
   <p>
     I might extend this as I explore and understand better minimalistic ideas to add color to a website.
   </p>
+
   <h2>Customization</h2>
   <p>
-    Just add your own css file and override/extend whatever you want.
+    Just add your own css file and extend whatever you want. (This site adds 4 small css rules and some inlines)
   </p>
   <p>
     So far only 2 variables are exposed:
+  </p>
   <ul>
     <li><code>--max-width</code> to control the width of the body </li>
     <li><code>--color-10</code> to control the accent color of your theme.</li>
   </ul>
-
   <p>
     <strong>Sustainbale.css</strong> is being developed with the 60/30/10 design rule in mind (being 60% the main black/white used for backgrounds!).
   </p>
   <p>
     <code>--color-10</code> will customize:
-    <ul style="list-style-type: lower-latin;">
-      <li>submit inputs,</li>
-      <li>links underlines</li>
-      <li>form input's accent-colors</li>
-    </ul>
   </p>
+  <ul style="list-style-type: lower-latin;">
+    <li>submit inputs,</li>
+    <li>links underlines</li>
+    <li>form input's accent-colors</li>
+  </ul>
   <p>
     It's up to you to use it to add some extra "splash" of it to your UI. (For this page I decided to style strong tags and the main header with it)
   </p>
-  </p>
+
   <h2>Sustainable.css in action</h2>
   <ul>
     <li>Catálogo Social: <a href="https://catalogosocial.fly.dev">Link</a></li>
     <li>4.5:1 Colors: <a href="https://451colors.fly.dev">Link</a></li>
     <li>FindYourFind.com: <a href="https://www.findyourfind.com">Link</a></li>
   </ul>
+
   <h2>Contributions</h2>
   You can read the code, fork and contribute in the Github repository: <a href="https://github.com/pdelboca/sustainable-css/">pdelboca/sustainable-css</a>.
+</main>
 </body>
 </html>
